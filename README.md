@@ -1,4 +1,4 @@
-# Pitu Bot Framework
+# 🦐 Pitu Bot Framework
 
 A TypeScript-first conversational bot framework with flow-based conversation management, node transitions, and extensible plugin system.
 
