@@ -40,6 +40,9 @@
   "bugs": {
     "url": "https://github.com/andreglatz/pitu/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@types/node": "^24.1.0",
     "tsup": "^8.5.0",
