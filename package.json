@@ -1,0 +1,46 @@
+{
+  "name": "pitu",
+  "version": "1.0.0",
+  "main": "lib/main.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "tsdoc.json"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup",
+    "docs": "typedoc",
+    "lint:tsdoc": "tsc --noEmit && tsdoc-check src/**/*.ts"
+  },
+  "keywords": [
+    "bot",
+    "chatbot",
+    "conversational",
+    "flow",
+    "typescript",
+    "twilio",
+    "messaging"
+  ],
+  "author": "André Glatz <andreglatz@outlook.com>",
+  "license": "ISC",
+  "description": "A TypeScript-first conversational bot framework with flow-based conversation management",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@microsoft/tsdoc": "^0.15.1",
+    "@microsoft/tsdoc-config": "^0.17.1",
+    "twilio": "^5.8.0",
+    "typedoc": "^0.28.7"
+  }
+}

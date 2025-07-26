@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+  "tagDefinitions": [
+    {
+      "tagName": "@internal",
+      "syntaxKind": "modifier",
+      "allowMultiple": false
+    },
+    {
+      "tagName": "@fileoverview",
+      "syntaxKind": "block",
+      "allowMultiple": false
+    },
+    {
+      "tagName": "@template",
+      "syntaxKind": "block",
+      "allowMultiple": true
+    },
+    {
+      "tagName": "@version",
+      "syntaxKind": "block",
+      "allowMultiple": false
+    },
+    {
+      "tagName": "@author",
+      "syntaxKind": "block",
+      "allowMultiple": true
+    }
+  ],
+  "supportForTags": {
+    "@internal": true,
+    "@fileoverview": true,
+    "@example": true,
+    "@param": true,
+    "@returns": true,
+    "@template": true,
+    "@version": true,
+    "@author": true,
+    "@see": true,
+    "@deprecated": true,
+    "@since": true,
+    "@throws": true,
+    "@remarks": true,
+    "@public": true,
+    "@private": true,
+    "@protected": true
+  }
+}
