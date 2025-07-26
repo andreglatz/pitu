@@ -32,6 +32,14 @@
   "author": "André Glatz <andreglatz@outlook.com>",
   "license": "ISC",
   "description": "A TypeScript-first conversational bot framework with flow-based conversation management",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreglatz/pitu.git"
+  },
+  "homepage": "https://github.com/andreglatz/pitu#readme",
+  "bugs": {
+    "url": "https://github.com/andreglatz/pitu/issues"
+  },
   "devDependencies": {
     "@types/node": "^24.1.0",
     "tsup": "^8.5.0",
