@@ -1,6 +1,6 @@
 {
   "name": "pitu",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "main": "lib/main.js",
   "types": "lib/index.d.ts",
   "packageManager": "pnpm@10.13.1",
