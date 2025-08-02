@@ -50,5 +50,6 @@
 
 export * from "./core";
 export * from "./types";
+export * from "./plugins/twilio";
 
 export { Bot as default } from "./core";
