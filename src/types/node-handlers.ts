@@ -29,7 +29,7 @@
  * };
  * ```
  */
-export type NodeHandlers<T = any> = {
+export interface NodeHandlers<T = any> {
   /**
    * Optional flag to mark this node as terminal.
    * When `true`, the conversation ends after this node executes,
@@ -54,7 +54,7 @@ export type NodeHandlers<T = any> = {
    * @param args - Arguments containing the message, context, send function, and transition function
    */
   onReceive?: (args: OnReceiveArgs<T>) => Promise<void> | void;
-};
+}
 
 /**
  * Arguments passed to a node's `onEnter` handler when the conversation transitions into the node.
