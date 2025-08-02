@@ -1,6 +1,6 @@
 {
   "name": "pitu",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "lib/main.js",
   "types": "lib/index.d.ts",
   "exports": {
