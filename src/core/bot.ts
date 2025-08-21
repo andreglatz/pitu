@@ -125,17 +125,26 @@ export class Bot<T = any> {
       });
     }
 
-    const finalNode = this.stateManager.get(next || currentNodeId);
+    const execute = async () => {
+      const nodeKey = next || currentNodeId;
+      const finalNode = this.stateManager.get(nodeKey);
 
-    if (isFirstRun || next) {
-      if (finalNode?.onEnter) {
+      if ((isFirstRun || next) && finalNode?.onEnter) {
         await finalNode.onEnter({
           context: args.context,
           send,
           transition,
         });
+
+        if (next && nodeKey !== next) {
+          return execute();
+        }
       }
-    }
+    };
+
+    await execute();
+
+    const finalNode = this.stateManager.get(next || currentNodeId);
 
     return {
       messages,
